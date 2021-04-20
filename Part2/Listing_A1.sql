@@ -32,7 +32,7 @@ DECLARE
   nDescLen PLS_INTEGER := 0;
 
 BEGIN
-  FOR s IN 1..250000
+  FOR s IN 2670000..2720000
     LOOP
       nDescLen := ROUND(DBMS_RANDOM.VALUE(100,999),0);
       INSERT INTO t_smartcos VALUES(s, SUBSTR(vcLoremIpsum, nDescLen - 125, nDescLeN);
